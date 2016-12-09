@@ -1,15 +1,11 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { NotesComponent }  from './notes/notes.component';
-
-import { HomeComponent }  from './home/home.component';
-import { AboutComponent } from './about/about.component';
-
 const appRoutes: Routes = [
-    { path: 'notes' , component: NotesComponent },
-    { path: ''      , component: NotesComponent },
-    { path: 'about' , component: AboutComponent }
+    { path : ''         , loadChildren: './app/modules/notes/notes.module'},
+    { path : 'notes'    , loadChildren: './app/modules/notes/notes.module'},
+    { path : 'about'    , loadChildren: './app/modules/about/about.module'}, 
+    { path : 'config'   , loadChildren: './app/modules/config/config.module'},
 ];
 
 export const appRoutingProviders: any[] = [];

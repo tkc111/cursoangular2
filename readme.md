@@ -4,6 +4,7 @@
 ## Instalación
 
 ```bash
+$ git clone https://github.com/tkc111/cursoangular2.git
 $ npm install
 $ npm start
 ```

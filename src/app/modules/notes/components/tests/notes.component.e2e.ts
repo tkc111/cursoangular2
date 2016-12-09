@@ -1,6 +1,6 @@
 'use strict';
 
-describe('Home Page', () => {
+describe('Notes Page', () => {
     beforeEach(() => {
         browser.get('/');
     });
@@ -10,8 +10,8 @@ describe('Home Page', () => {
         expect(subject).toEqual(true);
     });
 
-    it('should have h3 header with "Home Page" text', () => {
+    it('should have h3 header with "Notes" text', () => {
         let subject = element(by.tagName('h3'));
-        expect(subject.getText()).toBe('Home Page');
+        expect(subject.getText()).toBe('Notes');
     });
 });

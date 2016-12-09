@@ -1,21 +1,30 @@
 <section id="side-container">
 
-    <a routerLink="/notes">
+    <div routerLink="/notes">
         <i class="mdi mdi-note-multiple-outline" aria-hidden="true"></i><br>Notes
-    </a>
+    </div>
+
+    <div routerLink="/config">
+        <i class="mdi mdi-puzzle" aria-hidden="true"></i><br>Config
+    </div>
 
 </section>
 <section id="header-container">
     <header>
-        <h1 class="title">Curso Angular2</h1>
+        <h1 class="title"><i class="mdi mdi-angular" aria-hidden="true"></i> Curso Angular2</h1>
+        
     </header>
+    
 </section>    
 <section id="main-container">
     <router-outlet></router-outlet>
 </section>
 <section id="footer-container">
     <footer>
+        <div class="pull-left">
         <a routerLink="/">Home</a> | <a routerLink="/about" routerLinkActive="active">About</a>
         <span>&copy; 2016</span>
+        </div>
+        <div class="pull-right"><a href="https://github.com/tkc111/cursoangular2" target="blank_"><i class="mdi mdi-github-circle" aria-hidden="true"></i></a></div>
     </footer>
 </section>

@@ -1,0 +1,68 @@
+<div class="container">
+    <h3>About Page</h3>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Ejercicio 1</h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>Escribe una clase en TypeScript que represente una nota tipo Evernote. Debe tener un título, una fecha, un autor, y un contenido. El contenido no debe ser necesariamente un string, pudiendo venir representado por otro tipo de objetos.</li>
+                <li>Para probarla, escribe un archivo typescript que cree varias notas a modo de ejemplo y las muestre en un listado web.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Ejercicio 2</h3>
+        </div>
+        <div class="panel-body">
+            <ul>
+                <li>Escribe una pequeña aplicación Angular2 que liste un conjunto de notas tipo Evernote. Añade un buscador para poder buscar las notas por cualquier parte del título o del contenido.</li>
+                <li>Supón que las notas provienen de un servicio externo mapeado a través de un servicio de Angular, para ello haz que, como en clase, se devuelva un simple mock estático.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Ejercicio 3</h3>
+        </div>
+        <div class="panel-body">
+            Sobre la aplicación construida para el Ejercicio 2, añade la siguiente funcionalidad:
+            <ul>
+                <li>El usuario debe poder ver una nota en detalle.</li>
+                <li>El usuario debe poder acceder desde la vista de detalle a un formulario para su edición. Por ahora solo atenderemos a campos textuales y fechas.</li>
+                <li>Utiliza pipes para controlar el formato de la fecha</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Ejercicio 4</h3>
+        </div>
+        <div class="panel-body">
+            Sobre la aplicación construida para el Ejercicio 3, añade la siguiente funcionalidad:
+            <ul>
+                <li>Cambia el “layout” para que se adapte a lo siguiente:</li>
+                <ul>
+                    <li>Crea una cabecera que permanezca durante toda la navegación.</li>
+                    <li>La cabecera debe tener dos opciones: Notas, y Configuración.</li>
+                    <li>Bajo ella un área de trabajo que desplegará el contenido según la opción seleccionada en la cabecera</li>
+                    <ul>
+                        <li>Notas debe desplegar el listado de notas</li>
+                        <li>Configuración debe desplegar opciones de configuración de dos tipos:</li>
+                        <ul>
+                            <li>Perfil de usuario: nombre, email, password. (Por ahora datos falsos o guardamos en localstorage)</li>
+                            <li>Configuración app: No es esencial que exista funcionalidad aquí</li>
+                        </ul>
+                        <li>Tanto el área de notas como la de configuración deben tener un módulo y enrutamiento propios.</li>
+                    </ul>
+                    <li>Utiliza el servidor de ejemplo para guardar y rescatar datos utilizando un api REST.</li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+</div>

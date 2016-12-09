@@ -1,0 +1,10 @@
+<div class="note">
+    <h4>
+        {{ note.titulo }}
+        <div class="small">
+            {{ note.fecha | date:"fullDate" }}
+            <span class="autor pull-right">{{ note.autor }}</span>
+        </div>
+    </h4>
+    <p>{{ note.contenido | truncate : 100 }}</p>
+</div>
