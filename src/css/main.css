@@ -18,6 +18,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.active { font-weight: bold; }
 
 #side-container {
     height: 100vh;
@@ -43,7 +44,7 @@ a:hover {
 }
 #main-container {
     height: 90vh;
-    width: 94vw;
+    width: 93vw;
     position: relative;
     left: 6vw;
     padding-left: 2vw;
@@ -94,18 +95,22 @@ a:hover {
     border-bottom: solid 1px #e2e2e2;
     transition: all .5s;
 }
-
 .note h4 .small {
    transition: all .5s;
 }
-
+.note.active {
+    background-color: rgba(239, 238, 236, 0.7);
+    border: 1px solid #cecece;
+    color: #272727;
+    border-radius: 8px;
+}
 .note:hover {
     background-color: darkorange;
     color: white;
     cursor: pointer;
+    border-radius: 8px;
 }
-
- .note:hover h4 .small {
+.note:hover h4 .small {
     color: white !important;
  }
 

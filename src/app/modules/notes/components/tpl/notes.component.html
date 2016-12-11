@@ -1,4 +1,9 @@
-<div id="notes-container">
-    <h3>Notes</h3>
-    <notes-list></notes-list>
+<div class="row">
+    <div id="notes-container" class="col-xs-4">
+        <notes-list></notes-list>
+    </div>
+    <div id="note-detail-container" class="col-xs-8">
+        <router-outlet></router-outlet>
+    </div>
 </div>
+

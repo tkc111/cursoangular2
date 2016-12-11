@@ -1,1 +1,13 @@
-<note-mini *ngFor="let note of notes" [note]="note"></note-mini>
+<h3>
+    Notes <small>({{ sizeNotes | i18nPlural: sizeNotesMapping }})</small>
+    <div class="input-group">
+        <input class="form-control" name="search" type="search" placeholder="Search for..." 
+               [(ngModel)]="search"
+                (keyup)="buscarNota()">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="button" (click)="buscarNota()"><i class="mdi mdi-magnify" aria-hidden="true"></i></button>
+        </span>
+    </div>
+</h3>
+<note-mini *ngFor="let note of notes_filter" 
+           [note]="note" ></note-mini>
