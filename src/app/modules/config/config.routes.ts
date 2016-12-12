@@ -1,5 +1,5 @@
 import { Routes, RouterModule }    from '@angular/router';
-import { ConfigComponent }          from './config.component';
+import { ConfigComponent }          from './components/config.component';
 
 const configRoutes: Routes = [
     { path: '', component: ConfigComponent },
