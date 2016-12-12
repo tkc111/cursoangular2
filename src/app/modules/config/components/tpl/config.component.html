@@ -1,3 +1,20 @@
 <div>
-    <h3>Configuración</h3>
+    <h3>
+        Configuración
+    </h3>
+    <div class="row m-t-10">
+        <div class="col-xs-1" style="text-align: center;">
+            <a routerLink="user" routerLinkActive="active">
+                <i class="mdi mdi-account-settings-variant" aria-hidden="true"></i><br>User
+            </a>
+        </div>
+        <div class="col-xs-1" style="text-align: center;">
+            <a routerLink="app" routerLinkActive="active">
+                <i class="mdi mdi-settings" aria-hidden="true"></i><br>Aplicación
+            </a>
+        </div>
+    </div>
+    <div class="container m-t-20">
+        <router-outlet></router-outlet>
+    </div>
 </div>

@@ -35,6 +35,7 @@ export class NoteDetailComponent implements OnInit, OnDestroy {
 	@HostBinding('@routeAnimation') get routeAnimation() { return true; }
 	@HostBinding('style.display')   get display() 		 { return 'block'; }
 	@HostBinding('style.position')  get position() 		 { return 'absolute'; }
+  @HostBinding('style.width')     get width() 		   { return '100%'; }
 
     constructor(
 		private _route 				: ActivatedRoute,

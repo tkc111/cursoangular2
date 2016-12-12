@@ -18,7 +18,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-.active { font-weight: bold; }
+.active { font-weight: bold; color: #285c88; }
 
 #side-container {
     height: 100vh;
@@ -125,6 +125,17 @@ a:hover {
     font-style: italic;
 }
 
+#note-detail-container {
+ 
+}
+.note-detail {
+    width: 100%;
+}
+
+.note-detail .contenido {
+    text-align: justify;
+    margin-top: 20px;
+}
 /* ---- */
 i.mdi::before,
 span.mdi::before,
