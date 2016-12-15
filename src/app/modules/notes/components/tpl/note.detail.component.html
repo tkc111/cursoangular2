@@ -1,11 +1,15 @@
-<div *ngIf="note">
+<div class="note-detail" *ngIf="note">
 	<header>
-		<h2>{{note.titulo}}</h2>
+		<h2>
+			{{note.titulo}}
+			<div class="small">
+				{{ note.fecha | date:"fullDate" }}
+				<span class="autor pull-right">{{ note.autor }}</span>
+			</div>
+		</h2>
 	</header>
-	<span class="autor">{{note.autor}}</span>
-	<span class="fecha">{{note.fecha}}</span>
 	<div class="contenido">
-		{{note.contenido}}
+		{{ note.contenido }}
 	</div>
 	<hr/>
 </div>

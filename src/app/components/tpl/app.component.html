@@ -1,13 +1,16 @@
 <section id="side-container">
 
-    <div routerLink="/notes">
+    <div routerLink="/notes" routerLinkActive="active">
         <i class="mdi mdi-note-multiple-outline" aria-hidden="true"></i><br>Notes
     </div>
 
-    <div routerLink="/config">
+    <div routerLink="/config" routerLinkActive="active">
         <i class="mdi mdi-puzzle" aria-hidden="true"></i><br>Config
     </div>
 
+    <div routerLink="/about" style="position: absolute; bottom: 10px;  margin: 0 auto; width: calc(100% - 20px);" routerLinkActive="active">
+        <i class="mdi mdi-help" aria-hidden="true"></i><br>About
+    </div>
 </section>
 <section id="header-container">
     <header>
