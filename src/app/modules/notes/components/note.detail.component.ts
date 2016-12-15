@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, HostBinding
 	   , trigger, transition, animate
-	   , style, state } 		 	    	from '@angular/core';
+	   , style, state } 		 	    	          from '@angular/core';
 import { Router, ActivatedRoute, Params } 	from '@angular/router';
 import { INote }                            from "./../models/note.model";
 import { NotesListService }                 from "./../services/notes.list.service";
@@ -32,30 +32,30 @@ export class NoteDetailComponent implements OnInit, OnDestroy {
     private id        : number;
     private params_sub: any;
 	
-	@HostBinding('@routeAnimation') get routeAnimation() { return true; }
-	@HostBinding('style.display')   get display() 		 { return 'block'; }
-	@HostBinding('style.position')  get position() 		 { return 'absolute'; }
+    @HostBinding('@routeAnimation') get routeAnimation() { return true; }
+	  @HostBinding('style.display')   get display() 		 { return 'block'; }
+	  @HostBinding('style.position')  get position() 		 { return 'absolute'; }
 
     constructor(
-		private _route 				: ActivatedRoute,
-		private _router 			: Router,
-		private _notesListService 	: NotesListService
-	){
-		this.note = null;
-	}
+      private _route 				: ActivatedRoute,
+      private _router 			: Router,
+      private _notesListService 	: NotesListService
+    ){
+      this.note = null;
+    }
 
     ngOnInit() {
-		this.params_sub = this._route.params.subscribe( params => {
-			let id : number = parseInt(params['id']);
-			this.loadNote( id );
-		});
-	}
+      this.params_sub = this._route.params.subscribe( params => {
+        let id : number = parseInt(params['id']);
+        this.loadNote( id );
+      });
+    }
 
-	ngOnDestroy() {
-		this.params_sub.unsubscribe();
-	}
+    ngOnDestroy() {
+      this.params_sub.unsubscribe();
+    }
 
-    loadNote( id:number ) {
-		this.note = this._notesListService.getNote( id );
-	}
+      loadNote( id:number ) {
+      this.note = this._notesListService.getNote( id );
+    }
 }
