@@ -4,10 +4,10 @@ import { FormsModule }         from '@angular/forms';
 import { NotesComponent
        , NotesListComponent
        , NoteMiniComponent
-       , NoteDetailComponent
-       , NotesListService }    from './index';
+       , NoteDetailComponent } from './components/index';
+import { NotesListService }    from './services/index';       
 import notesRoutes             from './notes.routes';
-import { TruncatePipe }        from "./../../pipes/truncate";
+import { TruncatePipe }        from "./../../pipes/index";
 
 @NgModule({
     imports      : [ CommonModule

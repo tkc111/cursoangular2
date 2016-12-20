@@ -5,6 +5,7 @@ import { HttpModule
       ,  JsonpModule }          from '@angular/http';
 import { routing
       ,  appRoutingProviders }  from './app.routing';
+import { AuthGuard }            from './modules/auth/index';
 
 import { AppComponent }         from './components/app.component';
 
@@ -16,7 +17,7 @@ import { AppComponent }         from './components/app.component';
                     JsonpModule,
                     routing
                   ],
-    providers   : [ appRoutingProviders] ,
+    providers   : [ appRoutingProviders, AuthGuard ] ,
     bootstrap   : [ AppComponent ]
 })
 

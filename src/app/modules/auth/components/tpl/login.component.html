@@ -1,0 +1,22 @@
+<div>
+    <form name="flogin" (ngSubmit)="flogin.form.valid && login()" #flogin="ngForm" novalidate>
+        
+        <label for="usuario">Usuario</label>
+        
+        <input type="text" class="form-control" name="usuario" [(ngModel)]="credenciales.login" #usuario="ngModel" required />
+        <div *ngIf="flogin.submitted && !usuario.valid" style="color:red">
+        	Debe indicar el usuario
+        </div>
+        <br/><br/>
+
+       <label for="password">Contraseña</label>
+       <input type="password" name="password" [(ngModel)]="credenciales.pw" #password="ngModel" required />
+            <div *ngIf="flogin.submitted && !password.valid" style="color:red">
+            	Indique la contraseña
+            </div>
+        <br/><br/>
+        <button [disabled]="loading" type="submit">Login</button>
+        <br/>
+        <div [hidden]="!error" class="color:red,font-weight:bold">{{error}}</div>
+    </form>
+</div>
